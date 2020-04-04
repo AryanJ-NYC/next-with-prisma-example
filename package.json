@@ -1,0 +1,31 @@
+{
+  "name": "next-with-prisma-example",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AryanJ-NYC/next-with-prisma-example.git"
+  },
+  "author": "Aryan Jabbari <thewebdevcoach@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AryanJ-NYC/next-with-prisma-example/issues"
+  },
+  "homepage": "https://github.com/AryanJ-NYC/next-with-prisma-example#readme",
+  "dependencies": {
+    "formik": "^2.1.4",
+    "next": "^9.3.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@types/node": "^13.11.0",
+    "@types/react": "^16.9.32",
+    "typescript": "^3.8.3"
+  }
+}
