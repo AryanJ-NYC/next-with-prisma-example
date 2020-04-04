@@ -4,7 +4,7 @@ import React from 'react';
 import { withApollo } from '../src/lib/apollo';
 import { useQuery, useMutation } from '@apollo/react-hooks';
 
-const MoviesQuery = gql`
+const MOVIES_QUERY = gql`
   query MoviesQuery {
     movies {
       movieName
@@ -13,7 +13,7 @@ const MoviesQuery = gql`
     }
   }
 `;
-const CreateMovieMutation = gql`
+const CREATE_MOVIE_MUTATION = gql`
   mutation CreateMovieMutation($director: String!, $yearReleased: Int!, $movieName: String!) {
     createOneMovie(
       data: { director: $director, yearReleased: $yearReleased, movieName: $movieName }
@@ -24,8 +24,8 @@ const CreateMovieMutation = gql`
 `;
 
 const Index = () => {
-  const { data } = useQuery(MoviesQuery);
-  const [createMovie] = useMutation(CreateMovieMutation);
+  const { data } = useQuery(MOVIES_QUERY);
+  const [createMovie] = useMutation(CREATE_MOVIE_MUTATION);
 
   return (
     <>
